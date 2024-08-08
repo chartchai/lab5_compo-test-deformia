@@ -60,7 +60,6 @@ const hasNextPage = computed(() => {
     </div>
   </div>
 </template>
-
 <style scoped>
 .events {
   display: flex;
