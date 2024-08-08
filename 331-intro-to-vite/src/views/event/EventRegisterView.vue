@@ -3,6 +3,8 @@ import type { Event } from '@/type'
 import { toRefs } from 'vue'
 import { useRouter } from 'vue-router'
 import { useMessageStore } from '@/stores/message'
+import 'nprogress/nprogress.css';
+
 
 const props = defineProps<{
   event: Event

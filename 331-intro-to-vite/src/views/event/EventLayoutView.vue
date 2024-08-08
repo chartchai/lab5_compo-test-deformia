@@ -2,6 +2,8 @@
 import { RouterView } from 'vue-router'
 import { storeToRefs } from 'pinia'
 import { useEventStore } from '@/stores/event'
+import 'nprogress/nprogress.css';
+
 
 const store = useEventStore()
 const { event } = storeToRefs(store)

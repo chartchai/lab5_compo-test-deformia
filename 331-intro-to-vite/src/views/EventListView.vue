@@ -4,6 +4,8 @@ import type { Event } from '@/type'
 import { ref, onMounted, watchEffect, computed } from 'vue'
 import EventService from '@/services/EventService'
 import type { AxiosResponse } from 'axios'
+import 'nprogress/nprogress.css';
+
 
 const events = ref<Event[]>([])
 const totalEvent = ref<number>(0)
@@ -37,7 +39,6 @@ const hasNextPage = computed(() => {
   <h1>Event for good</h1>
   <!--new element-->
   <div class="flex flex-col items-center">
-
     <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
     <EventInfo v-for="event in events" :key="event.id" :event="event"></EventInfo>
     <div class="flex w-[290px] justify-between mt-4">
@@ -48,7 +49,8 @@ const hasNextPage = computed(() => {
         class="text-left text-gray-700 no-underline"
         id="page-prev"
       >
-        Prev Page</RouterLink>
+        Prev Page</RouterLink
+      >
       <RouterLink
         :to="{ name: 'event-list-view', query: { page: page + 1 } }"
         rel="next"
@@ -56,11 +58,10 @@ const hasNextPage = computed(() => {
         class="text-right text-gray-700 no-underline"
         id="page-next"
       >
-        Next Page</RouterLink>
+        Next Page</RouterLink
+      >
     </div>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

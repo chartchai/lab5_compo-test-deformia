@@ -3,6 +3,8 @@ import StudentCard from '@/components/StudentCard.vue'
 import type { Student } from '@/type'
 import { ref, onMounted } from 'vue'
 import StudentService from '@/services/StudentService'
+import 'nprogress/nprogress.css';
+
 
 const students = ref<Student[]>([])
 
@@ -25,6 +27,4 @@ onMounted(() => {
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
