@@ -4,8 +4,7 @@ import type { Event } from '@/type'
 import { ref, onMounted, watchEffect, computed } from 'vue'
 import EventService from '@/services/EventService'
 import type { AxiosResponse } from 'axios'
-import 'nprogress/nprogress.css';
-
+import 'nprogress/nprogress.css'
 
 const events = ref<Event[]>([])
 const totalEvent = ref<number>(0)

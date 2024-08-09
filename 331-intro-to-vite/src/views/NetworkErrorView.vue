@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
-import 'nprogress/nprogress.css';
+import 'nprogress/nprogress.css'
 
 const router = useRouter()
 </script>

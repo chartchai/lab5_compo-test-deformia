@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Student } from '@/type'
-import 'nprogress/nprogress.css';
+import 'nprogress/nprogress.css'
 
 defineProps<{
   student: Student

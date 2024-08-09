@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Event } from '@/type'
 import { RouterLink } from 'vue-router'
-import 'nprogress/nprogress.css';
+import 'nprogress/nprogress.css'
 
 defineProps<{
   event: Event

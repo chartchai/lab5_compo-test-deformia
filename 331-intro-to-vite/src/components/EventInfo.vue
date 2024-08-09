@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { defineProps } from 'vue'
 import type { Event } from '@/type'
-import 'nprogress/nprogress.css';
-
+import 'nprogress/nprogress.css'
 
 defineProps<{
   event: Event

@@ -3,8 +3,7 @@ import StudentCard from '@/components/StudentCard.vue'
 import type { Student } from '@/type'
 import { ref, onMounted } from 'vue'
 import StudentService from '@/services/StudentService'
-import 'nprogress/nprogress.css';
-
+import 'nprogress/nprogress.css'
 
 const students = ref<Student[]>([])
 
